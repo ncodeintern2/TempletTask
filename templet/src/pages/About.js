@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AboutList from "../compoment/About/AboutList";
+import AboutList from '../compoment/About/AboutList'
 
 const About = () => {
     return (
@@ -11,7 +11,7 @@ const About = () => {
             <div className="breadcrumb-agile">
                 <ol className="breadcrumb mb-0">
                     <li className="breadcrumb-item">
-                        <Link to="/">Home</Link>
+                        <Link to="">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">About Us</li>
                 </ol>
@@ -75,7 +75,7 @@ const About = () => {
                 </div>
             </section>
 
-           <AboutList/>
+            <AboutList/>
         </div>
     )
 
