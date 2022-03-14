@@ -45,7 +45,7 @@ const Contact = () => {
                                 </li>
                                 <li className="ml-2">
                                     <a href="#" className="w3pvt_google">
-                                        <span className="fa fa-google-plus"></span>
+                                        <span className=" fa-google-plus"></span>
                                     </a>
                                 </li>
                             </ul>
@@ -111,6 +111,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col-lg-6 form-group">
                                         <label>Email</label>
+                       
                                         <input className="form-control" type="email" name="Email" placeholder="" required="" />
                                     </div>
                                 </div>
