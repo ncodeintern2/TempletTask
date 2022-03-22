@@ -1,6 +1,6 @@
 import React from "react";
 import ListItems from "./ListItems";
-const Homelist =() =>{
+const AppointmentList =() =>{
     return(
         <ul className="banner_slide_bg">
             <ListItems/>
@@ -9,4 +9,4 @@ const Homelist =() =>{
     )
 
 }
-export default Homelist
+export default AppointmentList;

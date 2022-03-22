@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Home from './pages/Home';
 import Service from './pages/Service';
-import Single from './pages/Single';
+
 
 function App() {
  
@@ -22,7 +22,6 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/service' element={<Service/>}/>
           <Route path='/gellary' element={<Gallery/>}/>
-          <Route path='/single' element={<Single/>}/>
           <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer />

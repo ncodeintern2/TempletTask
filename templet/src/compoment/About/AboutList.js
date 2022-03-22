@@ -97,4 +97,4 @@ const AboutList = () => {
     )
 
 }
-export default AboutList
+export default AboutList;

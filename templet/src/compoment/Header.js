@@ -28,7 +28,6 @@ const Header = () =>{
                                         <input type="checkbox" id="drop-2" />
                                         <ul className="inner-dropdown">
                                             <li><Link to="/service">What We Do</Link></li>
-                                            <li><Link to="/single">See more</Link></li>
                                         </ul>
                                     </li>
                                     <li className="mr-lg-3 mr-2"><Link to="/gellary">Gallery</Link></li>
@@ -49,3 +48,6 @@ const Header = () =>{
 
 }
 export default Header;
+
+
+
