@@ -1,5 +1,6 @@
 import CustomerResponse from "./CustomerResponse"
 import Comment from "./Comment"
+import CommentList from "./CommentList"
 
 const SaloonInfo = () => {
     return (
@@ -60,6 +61,7 @@ const SaloonInfo = () => {
                         </div>
                         <Comment />
                         <CustomerResponse />
+            
 
                     </div>
 
