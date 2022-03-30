@@ -1,32 +1,25 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Footer from './compoment/Footer';
-import Header from './compoment/Header';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Gallery from './pages/Gallery';
-import Home from './pages/Home';
-import Service from './pages/Service';
+import FHome from './FHome';
+import Login from './pages/Login';
+
 
 
 function App() {
- 
+ const [islogged ,setIslogged] = useState(false)
+
+ const isLoginHander =(islog)=>{
+   setIslogged(islog)
+ }
+
   return (
     <div>
-      <Header />
-
-      <Routes>
-
-        
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About/>}/>
-          <Route path='/service' element={<Service/>}/>
-          <Route path='/gellary' element={<Gallery/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-      </Routes>
-      <Footer />
-
-    </div>
+      {/* <Login/>
+      <Routes> */}
+        {/* <Route path='/' element={<FHome/>}/> */}
+        {!islogged ? <Login  loginHander={isLoginHander}/> : <FHome setIslogged ={setIslogged}/>} 
+      {/* </Routes> */}
+    </div> 
   );
 }
 

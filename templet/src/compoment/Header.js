@@ -1,7 +1,13 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import {Link  , useNavigate} from 'react-router-dom'
 
-const Header = () =>{
+const Header = (props) =>{
+    const Navigate =useNavigate()
+    const logouHander =()=>{
+        Navigate('/');
+        props.setIslogged(false)
+
+    }
     return(
         <div>
             <header>
@@ -32,7 +38,7 @@ const Header = () =>{
                                     </li>
                                     <li className="mr-lg-3 mr-2"><Link to="/gellary">Gallery</Link></li>
                                     <li className="mr-lg-3 mr-2"><Link to="/contact">Contact Us</Link></li>
-
+                                    <button className="mr-lg-2" onClick={logouHander}>LogOut</button>
 
                                 </ul>
                             </nav>
